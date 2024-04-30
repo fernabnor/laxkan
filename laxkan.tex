@@ -1,386 +1,119 @@
-\documentclass[parskip=never,abstract=true]{scrartcl}
+\documentclass[10pt,a4paper]{amsart}
+\usepackage[subsec,skipmbb,skipfonts]{rune}
+\usepackage{laxkanstyle}
+%\usepackage{fullpage}
 
+\title[Base change and lax Kan extensions of $(\infty,2)$-categories]{Base change and lax Kan extensions of $(\infty,2)$-categories.}
 
-\usepackage[utf8]{inputenc}
-\usepackage{csquotes}
-\usepackage{quiver}
+\author{Fernando Abell\'an}
+\address{Norwegian University of Science and Technology (NTNU),
+  Trondheim, Norway}
 
-\usepackage[T1]{fontenc}
+  \date{\today}
 
+  \begin{document}
+  \begin{abstract}
+    We do basechange and lax kan extensions
+  \end{abstract}
+  \maketitle 
 
-\usepackage{lmodern}
-\usepackage{yfonts}
-\usepackage{textcomp}
-\frenchspacing
-\usepackage{setspace}
-%\usepackage[a4paper,left=2.5cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
-\usepackage{fullpage}
+  \tableofcontents
+ 
 
-\usepackage{extarrows}
-\usepackage{etoolbox}
-\usepackage{xparse}
+ \section{Preliminaries on fibrations}
+ \subsection{Free fibrations}
+ \begin{defn}\label{def:freefib}
+   Let $\ARplax(\tC)=\FUN^{\plax}([1],\tC)$ be the (op)lax arrow $(\infty,2)$-category of $\tC$ and denote by $\ev_i:\ARplax(\tC) \to \tC$ the functor induced by restriction along the map $\{i\} \to [1]$. We consider a functor 
+   \[
+     \mathfrak{F}_{(i,j)}: \CATIT_{/\tC} \to \FIB_{(i,j)}(\tC), 
+   \]
+   whose action on objects is as follows:
+   \begin{itemize}
+     \item Given $p:\tX \to \tC$ we define $\pi:\mathfrak{F}_{(i,j)}(\tX) \to \tC$ as the pullback
+     \[
+       \begin{tikzcd}
+         \mathfrak{F}_{(i,j)}(\tX) \arrow[r] \arrow[d] &  \tX \arrow[d,"p"] \\
+         \AR^{\epsilon\lax}(\tC) \arrow[r,"\ev_{i}"] & \tC
+       \end{tikzcd}
+     \]
+     where the map $\pi$ is induced by $\ev_{1-i}$ and $\epsilon=\op$ if $i\neq j$ and $\epsilon=\emptyset$ otherwise.
+   \end{itemize}
+   The universal property of the pullback guarantees that this construction extends to a functor of \itcats{}.
+ \end{defn}
 
-\usepackage{mathtools}
-\usepackage{amsthm,thmtools}
-\usepackage{dsfont}
-\let\mathbb\mathds
-\usepackage{amssymb}
-\usepackage[scr]{rsfso} % rather than mathrsfs
-\usepackage{bm}
-\usepackage{euscript}
-\usepackage{amsbsy}
-\DeclareMathAlphabet\mathbfcal{OMS}{cmsy}{b}{n}
-
-\usepackage{microtype}
-\usepackage{authblk}
-\usepackage{tikz}
-\usetikzlibrary{cd,quotes}
-\usetikzlibrary{decorations.markings}
-\usetikzlibrary{decorations.pathreplacing,calligraphy}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.13}
-\usepackage{booktabs}
-\usepackage{float}
-\usepackage{environ}
-\usepackage{xcolor,soul}
-\usepackage{hyperref} % éste va siempre el último (por lo general)
-\hypersetup{%
-  colorlinks,%
-  linkcolor={red!60!black},%
-  citecolor={blue!50!black},%
-  urlcolor={blue!80!black}%
-}
-\usepackage{enumitem,cleveref}
-\usepackage{eso-pic}
-
-
-
-%%%%%% For revisions (WALKER) %%%%%%
-
-\usepackage[normalem]{ulem}
-
-\newcommand{\red}[1]{{\color{red!70!blue} #1}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%subproof
-\newenvironment{subproof}[1][\proofname]{%
-	\renewcommand{\qedsymbol}{$\blacksquare$}%
-	\begin{proof}[#1]%
-	}{%
-	\end{proof}%
-}
-%%%walker macros
-\def\on{\operatorname}
-\def\ho{\on{ho}}
-\def\sf{\mathsf}
-
-\def\B{\EuScript{B}}
-\def\C{\EuScript{C}}
-\def\D{\EuScript{D}}
-\def\E{\EuScript{E}}
-\def\X{\EuScript{X}}
-\def\Y{\EuScript{Y}}
-\def\BB{\mathbb{B}}
-\def\AA{\mathbb{A}}
-\def\DD{\bcat{D}}
-\def\CC{\bcat{C}}
-\def\XX{\mathbb{X}}
-\def\bS{\textbf{S}}
-\def\FF{\mathbb{F}}
-\def\OO{\mathbb{O}}
-\def\TT{\mathbb{T}}
-\def\TTT{\bcat{T}}
-\def\LL{\mathbb{L}}
-\def\Fun{\on{Fun}}
-\def\Fungr{\on{Fun}^{\on{gr}}}
-\def\LFun{\on{LFun}}
-\def\Cat{\on{Cat}}
-\def\tCat{\on{2Cat}}
-\def\iCat{\EuScript{C}\!\on{at}}
-\def\giCat{\texttgoth{C}\!\on{at}}
-\def\CCat{\mathbb{C}\!\on{at}}
-\def\dpCat{\Cat_{\Delta}^{+}}
-\def\Hom{\on{Hom}}
-\def\D{\EuScript{D}}
-\def\Nerv{\on{N}}
-\def\Nsc{\on{N}^{\mathbf{sc}}}
-\def\Csc{\mathfrak{C}^{\mathbf{sc}}}
-\def\NN{\on{N_2}}
-\def\Nms{\on{N}^{\on{ms}}}
-\def\Lcat{{\on{LCat}}}
-\def\id{\on{id}}
-\def\Set{\on{Set}}
-\def\Map{\on{Map}}
-\def\scsSet{{\on{Set}_{\Delta}^{\mathbf{sc}}}}
-\def\sSet{{\on{Set}_{\Delta}}}
-\def\mbsSet{{\Set_\Delta^{\mathbf{mb}}}}
-\def\mblsSet{{\Set_\Delta^{\mathbf{mbl}}}}
-\def\mksSet{{\Set_\Delta^{+}}}
-\def\St{\on{St}}
-\def\ST{\mathbb{S}\!\on{t}}
-\def\Un{\on{Un}}
-\def\UN{\mathbb{U}\!\on{n}}
-\def\sc{{\on{sc}}}
-
-
-% Theorems
-\declaretheoremstyle[bodyfont=\itshape,notefont=\bfseries]{abellanA}
-\declaretheoremstyle[notefont=\bfseries]{abellanB}
-
-\declaretheorem[style=abellanA,numberwithin=section,name={Theorem}]{theorem}
-\declaretheorem[style=abellanA,numberwithin=section,name={Conjecture}]{conjecture}
-\declaretheorem[style=abellanA,numberlike=theorem,name={Lemma}]{lemma}
-\declaretheorem[style=abellanB,numberlike=theorem,name={Definition}]{definition}
-\declaretheorem[style=abellanB,numberlike=theorem,name={Definition-Lemma}]{definition-lemma}
-\declaretheorem[style=abellanB,numberlike=theorem,name={Remark}]{remark}
-\declaretheorem[style=abellanB,numberlike=theorem,name={Construction}]{construction}
-\declaretheorem[style=abellanA,numberlike=theorem,name={Proposition}]{proposition}
-\declaretheorem[style=abellanB,numberlike=theorem,name={Example}]{example}
-\declaretheorem[style=abellanB,numbered=no,name={Notation}]{notation}
-\declaretheorem[style=abellanA,numberlike=theorem,name={Corollary}]{corollary}
-\declaretheorem[style=abellanB,name={Question}]{question}
-
-\newtheorem*{thm*}{Theorem}
-\newtheorem*{prop*}{Proposition}
-\newtheorem*{cor*}{Corollary}
-
-
-% Correct spacing before theorem
-\renewcommand*\do[1]
- {\BeforeBeginEnvironment{#1}{\par\addvspace{\dimexpr\topsep+\parskip\relax}}
-  \AfterEndEnvironment{#1}{\par\addvspace{\dimexpr\topsep\relax}}}
-\docsvlist{theorem,lemma,definition,remark,proposition,example,corollary}
+ \section{Base change}
+ \begin{defn}\label{def:fibpattern}
+   Let $\tC$ be an \itcat{ }. A \emph{fibrational pattern} $\mathfrak{p}:=(\tC,(i,j),E,L)$ is given by:
+   \begin{itemize}
+     \item A pair $(i,j)$ where $i,j \in \{0,1\}$ which we call the variance.
+     \item A collection of edges $E$ of $\tC$ containing all equivalences.
+     \item A collection of 2-simplices $\sigma: [2]  \to \tC$ containing all commutative triangles. 
+   \end{itemize}
+   Given fibrational patterns $\mathfrak{p}=(\tC,(i,j),E,L)$ and $\mathfrak{q}=(\tD,(i,j),E',L')$ , we say that a functor $f: \tC \to \tD$ is a morphism of fibrational patterns if $f(E)\subseteq E'$ and $f(L)\subseteq L'$.
+ \end{defn}
 
 
 
-% Mathematical symbols
-\let\leq\leqslant
-\let\geq\geqslant
-\let\epsilon\varepsilon
-\let\isom\simeq
-\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
-\newcommand*\numberset{\mathbb}
-\newcommand*\tensor{\otimes}
-\newcommand*\gtensor{\otimes_{\on{gr}}}
-\newcommand*\rtensor{\otimes_{\cat{R}}}
-\newcommand*\bigtensor{\bigotimes}
-\newcommand*\A{\numberset{A}}
-\newcommand*\Prj{\numberset{P}}
-\newcommand*\N{\numberset{N}}
-\newcommand*\K{\numberset{K}}
-\newcommand*\Z{\numberset{Z}}
-\newcommand*\R{\numberset{R}}
-\newcommand*\V{\numberset{V}}
-\newcommand*\Q{\numberset{Q}}
-\newcommand*\F{\numberset{F}}
-\newcommand*\restr[3][\relax]{#2#1\rvert_{#3}^{}}
-\newcommand*\mathblank{\mathord{-}}
-\newcommand*\disjunion{\bigsqcup}
-\DeclareMathOperator*\colimdag{colim^\dagger}
-\DeclareMathOperator*\colimsharp{colim^\sharp}
-\DeclareMathOperator*\colimflat{colim^\flat}
-\DeclareMathOperator*\colimnat{colim^\natural}
-\DeclareMathOperator*\colimblack{colim^\blacklozenge}
-\DeclareMathOperator*\colim{colim}
+ \begin{ex}
+   Given an \itcat{} $\tC$, we denote by $\mathfrak{p}^{(i,j)}_{\flat}:=(\tC,(i,j),\flat,\flat)$ the fibrational pattern with variance $(i,j)$ where the collection of edges is given precisely by the equivalences and the collection $L$ is given by the commuting triangles. Dually, we denote $\mathfrak{p}^{(i,j)}_{\sharp}=(\tC,(i,j),\sharp,\sharp)$ the fibrational pattern where every edge (resp. every triangle) belongs to $E$ (resp. $L$). If the variance is clear from the context we will use the abusive notation $\mathfrak{p}_\flat$ and $\mathfrak{p}_{\sharp}$.
+ \end{ex}
 
-%categoricalnotation
-\def\msSet{{\on{Set}_{\Delta}^+}}
-\def\mssSet{{\on{Set}^{\mathbf{ms}}_{\Delta}}}
+ \begin{defn}
+   Let $\CATIT_{/(\tC,\mathfrak{p})}$ be the locally full subcategory of $\CATIT_{/\tC}$ whose objects are functors $p:\tX \to \tC$ such that:
+   \begin{itemize}
+      \item  There exists $i$-cartesian lifts of those 1-morphisms in $E_{\tC}$.\fmarg{Explain this prelim}
+      \item There exists $j$-cartesian lifts of 2-morphisms in $L_{\tC}$ which are stable under composition in $\tX$. 
+    \end{itemize}
+    The morphisms in $\CATIT_{/(\tC,\mathfrak{p})}$ are precisely those which preserve the $i$-cartesian (resp. $j$-cartesian) 1-morphisms (resp. 2-morphisms) above. Given $\tX \to \tC$ and $\tY \to \tC$ in $\CATIT_{/(\tC,\mathfrak{p})}$ we denote by $\MAP_{/(\tC,\mathfrak{p})}(\tX,\tY)$ the mapping $\infty$-category in $\CATIT_{/(\tC,\mathfrak{p})}$.
+ \end{defn}
 
-\def\Cat{\on{Cat}}
+ \begin{remark}
+   Observe that $\CATIT_{/(\tC,\mathfrak{p}^{(i,j)}_{\flat})}$ is simply given by the slice $(\infty,2)$-category $\CATIT_{/\tC}$ and that if $\mathfrak{p}=(\tC,(i,j),E,\sharp)$ then $\CATIT_{/(\tC,\mathfrak{p})}$ is given by $\FIB^{\elax}_{(i,j)}(\tC)$.
+ \end{remark}
 
+ \begin{remark}
+   Let $f:\tC \to \tD$ be functor inducing a map of fibrational patterns $\mathfrak{p} \to \mathfrak{q}$. Then pullback along $f$ induces a functor of \itcats{}
+   \[
+     f^*:   \CATIT_{/(\tD,\mathfrak{q})} \to \CATIT_{/(\tC,\mathfrak{p})}
+   \]
+   which we call the base change functor along $f$.
+ \end{remark}
 
+ \begin{defn}
+   Let $\patp=(\tC,(i,j),E,L)$ be a fibrational pattern and consider a functor $f:\tC \to \tD$. We define the lax basechange functor as the composite
+   \[
+     f^{\lax}_{\patp}: \CATIT_{/\tD} \to \FIB_{(i,j)}(\tD) \to \CATIT_{/(\tC,\mathfrak{p})}
+   \]
+   where the first map was given in \cref{def:freefib} and the second map is base change along the map $(\tC,(i,j),E,L) \to (\tD,(i,j),\sharp,\sharp)$ induced by $f$.
+ \end{defn}
 
-%bold greek symbols
-\usepackage[bbgreekl]{mathbbol}
-\def\cchi{\mathbb{\bbchi}}
-\def\PPhi{\mathbb{\bbphi}}
+\begin{defn}
+   Let $\patp=(\tC,(i,j),E,L)$ be a fibrational pattern and consider a functor $f:\tC \to \tD$. Then there exists a functor
+   \[
+      Rf_{*}\colon \CATIT_{/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_{/\tD})^{\op},\CATI), \enspace (\tX \to \tC) \mapsto \MAP_{/(\tC,\patp)}(f^{\lax}_{\patp}(-),\tX).
+   \]
+\end{defn}
 
-%emptyset
-\let\emptyset\varnothing
+\begin{propn}\label{prop:representable}
+  The functor
+  \[
+     Rf_{*}\colon \CATIT_{/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_{/\tD})^{\op},\CATI)
+   \] 
+   factors through the composite $\FIB_{(i,j)}(\tD) \to \CATIT_{/\tD} \to \FUN( (\CATIT_{/\tD})^{\op},\CATI)$ where the second functor is the Yoneda embedding.
+\end{propn}
+\begin{proof}
+  ss
+\end{proof}
 
-%%%%% arrowslashes
+\begin{defn}
+  We will call the functor $f_{*}: \CATIT_{/(\tC,\mathfrak{p})} \to \FIB_{(i,j)}(\tD)$ the \emph{fibrational} pushforward functor.
+\end{defn}
 
-\makeatletter
-\newcommand{\fixed@sra}{$\vrule height 2\fontdimen22\textfont2 width 0pt\rightarrow$}
-\newcommand{\shortarrowup}[1]{%
-  \mathrel{\text{\rotatebox[origin=c]{65}{\fixed@sra}}}
-}
-\newcommand{\shortarrowdown}[1]{%
-  \mathrel{\text{\rotatebox[origin=c]{250}{\fixed@sra}}}
-}
-\makeatother
-
-\newcommand{\upslash}{\!\shortarrowup{1}}
-\newcommand{\downslash}{\!\shortarrowdown{1}}
-
-% arrows and adjunctions
-\def\lra{\longrightarrow}
-\def\lla{\longleftarrow}
-\def\hra{\hookrightarrow}
-\def\llra{\def\arraystretch{.1}\begin{array}{c} \lra \\ \lla \end{array}}
-
-\newcommand{\goth}{\textfrak}
-
-\def\op{{\on{op}}}
-\def\co{{\on{co}}}
-\DeclareMathOperator\SSt{\mathbb{S}t}
-
-%%%%% Marked arrows
-
-\makeatletter
-\tikzcdset{
-  open/.code     = {\tikzcdset{hook, circled};},
-  open'/.code    = {\tikzcdset{hook', circled};},
-  circled/.code  = {\tikzcdset{markwith = {\draw (0,0) circle (.375ex);}};},
-  markwith/.code ={
-    \pgfutil@ifundefined%
-    {tikz@library@decorations.markings@loaded}%
-    {\pgfutil@packageerror{tikz-cd}{You need to say %
-        \string\usetikzlibrary{decorations.markings} to use arrows with markings}{}}{}%
-    \pgfkeysalso{/tikz/postaction = {
-        /tikz/decorate,
-        /tikz/decoration={markings, mark = at position 0.5 with {#1}}}
-    }
-  },
-}
-\makeatother
-
-
-%%%%%%%%%%%%%%%%%
-%%%%fancy bicats%%%%%%%%%%%%
-%%%%%%%%%%%%%%%
-
-\makeatletter
-\DeclareSymbolFont{lettersA}{U}{txmia}{m}{it}
-
-\DeclareRobustCommand*{\varmathbb}[1]{\gdef\F@ntPrefix{m@thbbch@r}%
-	\@EachCharacter #1\@EndEachCharacter}
-
-\long\def\DoLongFutureLet #1#2#3#4{%
-	\def\@FutureLetDecide{#1#2\@FutureLetToken
-		\def\@FutureLetNext{#3}\else
-		\def\@FutureLetNext{#4}\fi\@FutureLetNext}
-	\futurelet\@FutureLetToken\@FutureLetDecide}
-\def\DoFutureLet #1#2#3#4{\DoLongFutureLet{#1}{#2}{#3}{#4}}
-\def\@EachCharacter{\DoFutureLet{\ifx}{\@EndEachCharacter}%
-	{\@EachCharacterDone}{\@PickUpTheCharacter}}
-\def\m@keCharacter#1{\csname\F@ntPrefix#1\endcsname}
-\def\@PickUpTheCharacter#1{\m@keCharacter{#1}\@EachCharacter}
-\def\@EachCharacterDone \@EndEachCharacter{}
-
-\DeclareMathSymbol{\m@thbbch@rA}{\mathord}{lettersA}{129}
-\DeclareMathSymbol{\m@thbbch@rB}{\mathord}{lettersA}{130}
-\DeclareMathSymbol{\m@thbbch@rC}{\mathord}{lettersA}{131}
-\DeclareMathSymbol{\m@thbbch@rD}{\mathord}{lettersA}{132}
-\DeclareMathSymbol{\m@thbbch@rE}{\mathord}{lettersA}{133}
-\DeclareMathSymbol{\m@thbbch@rF}{\mathord}{lettersA}{134}
-\DeclareMathSymbol{\m@thbbch@rG}{\mathord}{lettersA}{135}
-\DeclareMathSymbol{\m@thbbch@rH}{\mathord}{lettersA}{136}
-\DeclareMathSymbol{\m@thbbch@rI}{\mathord}{lettersA}{137}
-\DeclareMathSymbol{\m@thbbch@rJ}{\mathord}{lettersA}{138}
-\DeclareMathSymbol{\m@thbbch@rK}{\mathord}{lettersA}{139}
-\DeclareMathSymbol{\m@thbbch@rL}{\mathord}{lettersA}{140}
-\DeclareMathSymbol{\m@thbbch@rM}{\mathord}{lettersA}{141}
-\DeclareMathSymbol{\m@thbbch@rN}{\mathord}{lettersA}{142}
-\DeclareMathSymbol{\m@thbbch@rO}{\mathord}{lettersA}{143}
-\DeclareMathSymbol{\m@thbbch@rP}{\mathord}{lettersA}{144}
-\DeclareMathSymbol{\m@thbbch@rQ}{\mathord}{lettersA}{145}
-\DeclareMathSymbol{\m@thbbch@rR}{\mathord}{lettersA}{146}
-\DeclareMathSymbol{\m@thbbch@rS}{\mathord}{lettersA}{147}
-\DeclareMathSymbol{\m@thbbch@rT}{\mathord}{lettersA}{148}
-\DeclareMathSymbol{\m@thbbch@rU}{\mathord}{lettersA}{149}
-\DeclareMathSymbol{\m@thbbch@rV}{\mathord}{lettersA}{150}
-\DeclareMathSymbol{\m@thbbch@rW}{\mathord}{lettersA}{151}
-\DeclareMathSymbol{\m@thbbch@rX}{\mathord}{lettersA}{152}
-\DeclareMathSymbol{\m@thbbch@rY}{\mathord}{lettersA}{153}
-\DeclareMathSymbol{\m@thbbch@rZ}{\mathord}{lettersA}{154}
-
-\makeatother
-
-\def\coCart{\on{coCart}}
-
-%%%%%%%%command for bicats
-\def\bcat{\varmathbb}
-\def\Fr{\on{Fr}}
-\def\TTw{\bcat{T}\!{\on{w}}}
-\def\TTOO{\mathbb{T}^n(0,\bar{0})}
-\def\TTOOi{\mathbb{T}^n_i(0,\bar{0})}
-
-\title{On partially lax Kan extensions of $\infty$-bicategories}
-\author{Fernando Abellán}
-\date{}
-\begin{document}
-  \maketitle
-  \section{Introduction}
-  \section{Right Kan extensions of \texorpdfstring{$\bcat{C}\!\on{at}_\infty$-}-valued functors}
-  For this section we fix a functor of marked $\infty$-bicategories $f: \CC^\dagger \to \DD^\dagger$.
-
-  \begin{definition}
-  	Given a marked $\infty$-bicategory $\CC^\dagger$ we define a $\msSet$-enriched category $\coCart(\CC)^\dagger$ as follows:
-  	\begin{itemize}
-  			\item Objects are given by maps of marked-scaled simplicial sets $p: X \to \CC$ such that $p$ is an inner coCartesian 1-fibration.
-  			\item Given a pair of inner coCartesian fibrations $p: X \to \CC$ and $\pi: Y \to \CC$ we define a marked simplicial set of maps as the full subcategory $\on{Map}^\dagger_{\CC}(X,Y) \subset \on{Map}^\flat_{\CC}(X,Y)$ (see REF) consisting in those commutative diagrams
-  			\[
-  				\begin{tikzcd}
-  					X \arrow[dr,"p",swap] \arrow[rr,"f"] && Y \arrow[dl,"\pi"] \\
-  					& \CC &
-  				\end{tikzcd}
-  			\]
-  			that preserve coCartesian edges lying over marked edge in $\CC^\dagger$.
-  	\end{itemize}
-  \end{definition}
-
-  \begin{remark}
-  	Observe that $\coCart(\CC)^\dagger$ is a fibrant $\msSet$-enriched category and thus defines an $(\infty,2)$-category. 
-  \end{remark}
-
-  \begin{remark}
-  	Observe that given a marked functor $f:\CC^\dagger \to \DD^\dagger$ of $\infty$-bicategories we obtain a restriction functor
-  	\[
-  		\begin{tikzcd}
-  			f^*: \coCart(\DD)^\dagger \arrow[r] & \coCart(\CC)^\dagger
-  		\end{tikzcd}
-  	\]
-  	which is given by pullback along $f$.
-  \end{remark}
-
- \begin{definition}
- 	Given an inner coCartesian 1-fibration $p: X \to \CC$ we define a marked-scaled simplicial set  over $\DD$, $\on{R}(p):\mathcal{R}_X \to \DD$ as follows:
- 	\begin{itemize}
- 		\item  A simplex $\sigma: \Delta^n \to \mathcal{R}_X$ is given by a simplex $\alpha: \Delta^n \to \DD$ together with a map over $\CC$
- 		\[\begin{tikzcd}
-	{\Delta^n \times \alpha^*\left(\CC^\dagger_{\DD\upslash}\right)} && X \\
-	& \CC
-	\arrow[from=1-1, to=1-3,]
-	\arrow[curve={height=12pt}, from=1-1, to=2-2,"\varphi",swap]
-	\arrow[from=1-3, to=2-2,"p"]
-\end{tikzcd}\]
-where $\alpha^*\left(\CC^\dagger_{\DD\upslash}\right)$ is given by the pullback of marked-scaled simplicial sets
-\[
-	\begin{tikzcd}
-		\alpha^*\left(\CC^\dagger_{\DD\upslash}\right) \arrow[r] \arrow[d] & \CC^\dagger_{\DD \upslash} \arrow[d] \\
-		\Delta^n \arrow[r,"\alpha"] & \DD
-	\end{tikzcd}
-\]
-and $\varphi$ is the composite  $\begin{tikzcd}
-	\Delta^n \times \alpha^*\left(\CC^\dagger_{\DD\upslash}\right) \arrow[r] & \alpha^*\left(\CC^\dagger_{\DD\upslash}\right) \arrow[r] & \CC^{\dagger}_{\DD \upslash} \arrow[r] & \CC
-\end{tikzcd}$
-\item An edge $e: \Delta^1 \to \mathcal{R}_X$ is marked if and only if the corresponding map $\Delta^1 \times e^*\left(\CC^\dagger_{\DD\upslash}\right) \to X$ factors through $(\Delta^1)^\sharp \times e^*\left(\CC^\dagger_{\DD\upslash}\right)$.
-\item We declare a triangle $\theta: \Delta^2 \to \mathcal{R}_X$ to be thin if and only if its associated simplex $\beta:\Delta^2 \to \DD$ is thin in $\DD$.
- 	\end{itemize}
-
-\begin{proposition}
-	For every inner coCartesian 1-fibration $p: X \to \CC$ the map $\on{R}(p): \mathcal{R}_X \to \DD$ defines an inner coCartesian 1-fibration over $\DD$. Moreover, this assignment extends to a $\msSet$-enriched functor
-	\[
-		\begin{tikzcd}
-			\mathfrak{R}f:\coCart(\DD)^\dagger \arrow[r] & \coCart(\CC)^\dagger.
-		\end{tikzcd}
-	\]
-\end{proposition}
-
- \end{definition}
-
+\begin{thm}
+  Let $\patp=(\tC,(i,j),E,L)$ be a fibrational pattern and let $f:\tC \to \tD$ be a functor. Then there exists an adjunction of $(\infty,2)$-categories:
+  \[
+    f^*: \FIB_{(i,j)}(\tD)  \llra \CATIT_{/(\tC,\mathfrak{p})}: f_*
+  \]
+\end{thm}
 
 \end{document}

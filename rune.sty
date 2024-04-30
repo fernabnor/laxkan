@@ -1,0 +1,251 @@
+\RequirePackage{kvoptions}
+
+\SetupKeyvalOptions{
+  family=RGH,
+  prefix=RGH@
+}
+
+%\DeclareBoolOption{skipname}
+\DeclareBoolOption{skipfonts}
+\DeclareBoolOption{skipmbb}
+%\DeclareBoolOption{skipmargins}
+\DeclareBoolOption{skipbib}
+%\DeclareBoolOption{nodate}
+%\DeclareBoolOption{noadd}
+\DeclareBoolOption{global}
+\DeclareBoolOption{sec}
+\DeclareBoolOption{subsec}
+\ProcessKeyvalOptions*\relax
+
+% Packages
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage[shortlabels]{enumitem}
+  \setitemize[1]{leftmargin=2em,label=$\blacktriangleright$}
+  \setenumerate[1]{leftmargin=*}
+\usepackage[colorlinks=true,linktocpage=true,citecolor=blue,unicode,hyperindex,breaklinks]{hyperref}
+\usepackage[capitalise]{cleveref}
+\crefformat{equation}{(#2#1#3)}
+%\usepackage{todonotes}
+\usepackage{color}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows}
+\usepackage{tikz-cd}
+\ifRGH@skipbib
+\else
+\usepackage[alphabetic]{amsrefs}
+% Fix arXiv links in bibliography
+\usepackage{xstring}
+\renewcommand{\eprint}[1]{\IfBeginWith{#1}{arXiv}{\href{https://arxiv.org/abs/#1}{#1}}{\href{#1}{#1}}}
+%\renewcommand{\eprint}[1]{\href{https://arxiv.org/abs/#1}{#1}}
+\fi
+\ifRGH@skipfonts
+\else
+%\usepackage{palatino}
+%\usepackage{mathpazo}
+\usepackage{eucal}
+\fi
+\ifRGH@skipmbb
+\newcommand{\bbDelta}{\boldsymbol{\Delta}}
+\newcommand{\bbGamma}{\boldsymbol{\Gamma}}
+\newcommand{\bbTheta}{\boldsymbol{\Theta}}
+\newcommand{\bbOmega}{\boldsymbol{\Omega}}
+\newcommand{\bbSigma}{\boldsymbol{\Sigma}}
+\newcommand{\bbLambda}{\boldsymbol{\Lambda}}
+\else
+% \makeatletter
+\DeclareSymbolFontAlphabet{\amsbb}{AMSb}
+%\makeatother
+\usepackage{mbboard}
+\renewcommand{\mathbb}[1]{\amsbb{#1}}
+\fi
+
+
+
+% Theorems
+\theoremstyle{plain}
+\ifRGH@global
+\setcounter{tocdepth}{1}
+\newtheorem{thm}{Theorem}
+\else
+\ifRGH@sec
+\setcounter{tocdepth}{1}
+\newtheorem{thm}{Theorem}[section]
+\else
+\ifRGH@subsec
+\setcounter{tocdepth}{2}
+\newtheorem{thm}{Theorem}[subsection]
+\else
+\fi
+\fi
+\fi
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{propn}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prethm}[thm]{Pretheorem}
+\newtheorem{conjecture}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{conjecture*}{Conjecture}
+\newtheorem*{goal*}{Goal}
+\newtheorem*{question*}{Question}
+\newtheorem*{prethm*}{Pretheorem}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{exs}[thm]{Examples}
+\newtheorem{notation}[thm]{Notation}
+\newtheorem{fact}[thm]{Fact}
+\newtheorem{warning}[thm]{Warning}
+\newtheorem{hope}[thm]{Hope}
+\newtheorem{question}[thm]{Question}
+\newtheorem{problem}[thm]{Problem}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{exercise}[thm]{Exercise}
+\newtheorem{observation}[thm]{Observation}
+\newtheorem{idea}[thm]{Vague Idea}
+\newtheorem{construction}[thm]{Construction}
+\newtheorem{variant}[thm]{Variant}
+\newtheorem{note}[thm]{Note}
+\theoremstyle{remark}
+\newtheorem*{claim}{Claim}
+
+
+% Categories
+\newcommand{\txt}[1]{\ensuremath{\text{\textup{#1}}}}
+\newcommand{\catname}[1]{\txt{#1}}
+\newcommand{\Set}{\catname{Set}}
+\newcommand{\sSet}{\Set_{\Delta}}
+\newcommand{\Cat}{\catname{Cat}}
+\newcommand{\CatI}{\catname{Cat}_\infty}
+\newcommand{\LCatI}{\widehat{\catname{Cat}}_\infty}
+\newcommand{\Ab}{\catname{Ab}}
+\newcommand{\Sp}{\catname{Sp}}
+\newcommand{\h}{\mathrm{h}}
+\newcommand{\hSp}{\h\Sp}
+\newcommand{\Mod}{\catname{Mod}}
+\newcommand{\LMod}{\catname{LMod}}
+\newcommand{\RMod}{\catname{RMod}}
+\newcommand{\hMod}[1]{\h\Mod{#1}}
+\newcommand{\Mon}{\txt{Mon}}
+\newcommand{\Alg}{\catname{Alg}}
+\newcommand{\Opd}{\catname{Opd}}
+\newcommand{\OpdI}{\Opd_{\infty}}
+\newcommand{\PrL}{\catname{Pr}^{\mathrm{L}}}
+\newcommand{\Fun}{\txt{Fun}}
+\newcommand{\Map}{\txt{Map}}
+\newcommand{\Hom}{\txt{Hom}}
+\newcommand{\Aut}{\txt{Aut}}
+\newcommand{\End}{\txt{End}}
+\newcommand{\op}{\txt{op}}
+\DeclareMathOperator{\Seg}{Seg}
+\DeclareMathOperator{\Span}{Span}
+\DeclareMathOperator{\SPAN}{SPAN}
+\newcommand{\CAlg}{\txt{CAlg}}
+
+% Abbreviations
+\newcommand{\IFF}{if and only if}
+\newcommand{\icat}{$\infty$-category}
+\newcommand{\icats}{$\infty$-categories}
+\newcommand{\icatl}{$\infty$-categorical}
+\newcommand{\igpd}{$\infty$-groupoid}
+\newcommand{\igpds}{$\infty$-groupoids}
+\newcommand{\igpdl}{$\infty$-groupoidal}
+\newcommand{\itcat}{$(\infty,2)$-category}
+\newcommand{\itcats}{$(\infty,2)$-categories}
+\newcommand{\incat}{$(\infty,n)$-category}
+\newcommand{\incats}{$(\infty,n)$-categories}
+\newcommand{\iopd}{$\infty$-operad}
+\newcommand{\iopds}{$\infty$-operads}
+\newcommand{\nsiopd}{non-symmetric $\infty$-operad}
+\newcommand{\nsiopds}{non-symmetric $\infty$-operads}
+\newcommand{\gnsiopd}{generalized non-symmetric $\infty$-operad}
+\newcommand{\gnsiopds}{generalized non-symmetric $\infty$-operads}
+\newcommand{\eg}{e.g.\@}
+\newcommand{\ie}{i.e.\@}
+\newcommand{\Ie}{I.e.\@}
+\newcommand{\cf}{cf.\@}
+\newcommand{\Cf}{Cf.\@}
+
+
+
+
+
+% Letters
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\p}{\mathfrak{p}}
+
+
+
+% Arrows
+\newcommand{\isoto}{\xrightarrow{\sim}}
+\newcommand{\isofrom}{\xleftarrow{\sim}}
+\newcommand{\toto}{\rightrightarrows}
+\newcommand{\xto}[1]{\xrightarrow{#1}}
+\newcommand{\xtoto}[2]{\mathop{\toto}^{#1}_{#2}}
+\newcommand{\from}{\leftarrow}
+\newcommand{\xfrom}[1]{\xleftarrow{#1}}
+\newcommand{\xtofrom}[2]{\mathop{\rightleftarrows}^{#1}_{#2}}
+
+
+% Other symbols
+\newcommand{\blank}{\text{\textendash}}
+\newcommand{\id}{\txt{id}}
+\DeclareMathOperator{\colimP}{colim}
+\newcommand{\colim}{\mathop{\colimP}}
+\DeclareMathOperator{\hocolimP}{hocolim}
+\newcommand{\hocolim}{\mathop{\hocolimP}}
+\DeclareMathOperator{\holimP}{holim}
+\newcommand{\holim}{\mathop{\holimP}}
+\DeclareMathOperator{\Ind}{Ind}
+\newcommand{\simp}{\bbDelta}
+\newcommand{\Dop}{\simp^{\op}}
+\newcommand{\angled}[1]{\langle #1 \rangle}
+
+% Comments
+%\newcommand{\rgh}[1]{\textcolor{red}{ [#1] }}
+%\newcommand{\fgh}[1]{\textcolor{blue}{ [#1] }}
+
+\renewcommand{\phi}{\varphi}
+
+% Nicer table of contents
+%\makeatletter
+\def\@tocline#1#2#3#4#5#6#7{\relax
+  \ifnum #1>\c@tocdepth % then omit
+  \else
+    \par \addpenalty\@secpenalty\addvspace{#2}%
+    \begingroup \hyphenpenalty\@M
+    \@ifempty{#4}{%
+      \@tempdima\csname r@tocindent\number#1\endcsname\relax
+    }{%
+       \@tempdima#4\relax
+    }%
+    \parindent\z@ \leftskip#3\relax \advance\leftskip\@tempdima\relax
+    \rightskip\@pnumwidth plus4em \parfillskip-\@pnumwidth
+    #5\leavevmode\hskip-\@tempdima
+      \ifcase #1
+       \or \hskip -1em \or \hskip 1em \or \hskip 3em \else \hskip 5em \fi%
+      #6\nobreak\relax
+    \hfill\hbox to\@pnumwidth{\@tocpagenum{#7}}
+      \par
+    \nobreak
+    \endgroup
+  \fi}
+% \makeatother
+
+
+
+
+% \ifRGH@skipmargins
+% \else
+%  \headheight=8pt
+%  \topmargin=0pt
+%  \textheight=624pt
+%  \textwidth=432pt
+%  \oddsidemargin=18pt
+% \evensidemargin=18pt
+% \fi
+

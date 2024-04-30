@@ -1,0 +1,18 @@
+\newcommand{\csquare}[8]{%
+  \begin{tikzcd}%
+     #1 \arrow{r}{#5} \arrow{d}[swap]{#6} \pgfmatrixnextcell #2 %
+      \arrow{d}{#7} \\%
+     #3 \arrow{r}{#8} \pgfmatrixnextcell #4%
+   \end{tikzcd}%
+   }
+   \newcommand{\nlcsquare}[4]{\csquare{#1}{#2}{#3}{#4}{}{}{}{}}
+
+\newcommand{\dnlcsquare}[4]{\[\nlcsquare{#1}{#2}{#3}{#4}\]}   
+
+\newcommand{\opctriangle}[6]{%
+  \begin{tikzcd}%
+     #1 \arrow{rr}{#4} \arrow{dr}[swap]{#5}
+     \pgfmatrixnextcell\pgfmatrixnextcell #2 \arrow{dl}{#6} \\%
+     \pgfmatrixnextcell #3 %
+   \end{tikzcd}%
+   }
