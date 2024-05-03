@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1714726069 "laxkan.tex" "laxkan.pdf" "laxkan" 1714726070
+["pdflatex"] 1714728468 "laxkan.tex" "laxkan.pdf" "laxkan" 1714728469
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cabin/cbn_i3ioen.enc" 1594851208 2809 947aec6f9801b5a045e999c93403fba2 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fbb/fbb_3cnzgn.enc" 1593726333 2964 e763380f9a2cc0bc94964465a80c31ce ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fbb/fbb_mbwkti.enc" 1593726333 2957 b691ca1eb366740d7267f0917f54ccca ""
@@ -74,6 +74,7 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb" 1569879884 35829 268d1d114c9114e541f92817aec4230d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/LibertineMathMI5.pfb" 1569879884 36138 54cca9a189ecac91365757cd31373770 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb" 1575323900 36894 0893e50696ed2a200373455c6aff080e ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/LibertineMathRM.pfb" 1569879884 17941 ddba6afdead1586dc42d18763749eddd ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb" 1572128992 32409 1452fa0ce4fabfb48acd5d077e296f6d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb" 1572128992 35776 3cf3205badc1a3a38b65b34f4cef78d9 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb" 1572128992 34733 61fa3c01fac511e451670c1b454ff211 ""
@@ -278,10 +279,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1664977418 2826439 175ef96952a5fa48b07c0ddf5a0647ac ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "laxkan.aux" 1714726070 2717 0596283fb520bba32d1224ffebc71307 "pdflatex"
-  "laxkan.out" 1714726070 1504 3423902204dcdd50e88cd9f94a35dd9d "pdflatex"
-  "laxkan.tex" 1714726066 9391 b623c7ebec5838732030ac2534c8a951 ""
-  "laxkan.toc" 1714726070 684 c6bae49e9dd7ded47d990b71d68daa4a "pdflatex"
+  "laxkan.aux" 1714728469 2838 0cca3029f6d8aaa1dd9bd851652d78a1 "pdflatex"
+  "laxkan.out" 1714728469 1504 3423902204dcdd50e88cd9f94a35dd9d "pdflatex"
+  "laxkan.tex" 1714728467 9773 b6c4049e63ff0f2c6800e765178586db ""
+  "laxkan.toc" 1714728469 684 fd62183c47452065749ab157499818a7 "pdflatex"
   "laxkanstyle.sty" 1714473753 12589 36cc7a7a8650a926610b40a386bb6be6 ""
   "rune.sty" 1712213685 6838 e8462e6266b53b73bd04e558ec25d06f ""
   "runediag.sty" 1682495342 539 7cf0936f11963ce358e6a0522e9fba06 ""
