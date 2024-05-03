@@ -20,8 +20,51 @@
   \tableofcontents
  
 
- \section{Preliminaries on fibrations}
- \subsection{Free fibrations}
+ \section{Preliminaries}
+ \subsection{Elementary definitions and models for \texorpdfstring{$(\infty,2)-$}-categories}
+ \subsection{Fibrations of \texorpdfstring{$(\infty,2)-$}-categories and straightening}
+ \begin{defn}\label{def:elaxfibcat}
+  Let $(\tB,E)$ be a marked \itcat{} and let $\FIB_{(i,j)}^{\elax}(\tB)$ denote the wide locally full subcategory of
+  $\FIB_{(i,j)}^{\lax}(\tB)$ where the morphisms are required to preserve $i$-cartesian morphisms over $E$. We denote by $\Fun^{E\dcart}_{/\tB}(-,-)$ the mapping $\infty$-category functor for $\FIB_{(1,j)}^{\elax}(\tB)$ and similarly $\Fun^{E\dcoc}_{/\tB}(-,-)$ for $\FIB_{(0,j)}^{\elax}(\tB)$.
+\end{defn}
+ \subsection{Partially lax limits}
+ In this section, we collect basic results and definitions of the theory of partially lax (co)limits which will be of use later. For a more extensive treatment (and the proofs of the statements below) we refer the reader to (CITE) .
+ \begin{defn}
+  Let $(\tA, E)$ be a marked \itcat{} and let $F\colon \tc{A} \to \tc{B}$ be a functor of \itcats{}. We say that $\colim^{\diamond}_{\tc{A}}F \in \tc{B}$, where $\diamond \in \{\elax, \eoplax \}$, is the \emph{$\diamond$-colimit} of $F$ if  we have a natural equivalence of $\CATI$-valued functors
+  \[
+    \Nat^{\diamond}_{\tc{A},\tB}\left(F, \underline{(\blank)}\right)\simeq \tc{B}(\colim^{\diamond}_{\tc{A}}F, \blank)
+  \]
+  where $\underline{(\blank)}\colon \tc{B} \to \FUN(\tc{A},\tc{B})^{\diamond}$ is the functor sending each object to a constant diagram. Similarly, we say that
+  $\lim^{\diamond}_{\tc{A}}F \in \tc{B}$, where $\diamond \in \{\elax, \eoplax \}$ , is the \emph{$\diamond$-limit} of $F$ if  we have a natural equivalence of $\CATI$-valued functors
+   \[
+     \Nat^{\diamond}_{\tc{A},\tB}\left(\underline{(\blank)},F\right)
+     \simeq \tB(\blank,\lim^{\diamond}_{\tc{A}}F).
+   \]
+\end{defn}
+\begin{propn}\label{prop:laxcolimloc}
+  Let $(\tA,E)$ be a marked \itcat{} and consider a functor $F \colon\tc{A} \to \CATIT$ with corresponding $(i,j)$-fibration  $\pi \colon\mathcal{F}_{i,j} \to \tc{A}^{\epsilon}$ where $\epsilon\in\{\emptyset,\op,\co,\coop\}$. Write $L_{E}(\mathcal{F}_{i,j})$ for the \itcat{} obtained from $\mathcal{F}_{i,j}$ by inverting the $j$-cartesian 2-morphisms together with those $i$-cartesian 1-morphisms that lie over $E$. Then the $E$-(op)lax colimits of $F$ can be described as
+  \[
+     \colim^{\elax}_{\tc{A}}F \simeq L_{E}(\scr{F}_{0,j}), \enspace \colim^{\eoplax}_{\tc{A}}F \simeq L_E(\scr{F}_{1,j})
+   \]
+   for $j = 0,1$.
+\end{propn}
+\begin{defn}\label{def:FUNdcoc}
+  Let $\scr{F},\scr{G} \in \FIB^{\elax}_{(i,j)}(\tA)$. If $i=0$, we denote by $\FUN^{E\dcoc}_{/\tc{A}}(\scr{F},\scr{G})$ the $(\infty,2)$-category characterised by the universal property
+  \[
+    \Map_{\CatIT}(\tX,\FUN^{E\dcoc}_{/\tc{A}}(\scr{F},\scr{G})) \simeq \Fun^{E\dcoc}_{/\tc{A}}(\scr{F}\times \tX,\scr{G}),
+  \]
+  where the right-handside was defined in \cref{def:elaxfibcat}. We define $\FUN^{E\dcart}_{/\tc{A}}(\scr{F},\scr{G})$ analogously whenever $i=1$.
+\end{defn}
+
+\begin{propn}\label{prop:laxlimCATIT}
+  Let $(\tA,E)$ be a marked \itcat{} and consider a functor $F \colon\tc{A} \to \CATIT$ with corresponding  $(i,j)$-fibration  $\pi \colon\mathcal{F}_{i,j} \to \tc{A}^{\epsilon}$ where $\epsilon\in\{\blank,\op,\co,\coop\}$. Then the $E$-(op)lax limits of $F$ in $\CATIT$ can be described as
+  \[
+    \lim^{\elax}_{\tc{A}}F \simeq \FUN^{E\dcoc}_{/\tc{A}}(\tc{A},\scr{F}_{0,j}), \enspace \lim^{\eoplax}_{\tc{A}}F \simeq \FUN^{E\dcart}_{/\tc{A}}(\tc{A},\scr{F}_{1,j})
+  \]
+  for $j = 0,1$.
+\end{propn}
+ \subsection{Cofinality}
+ fff
  \begin{defn}\label{def:freefib}
    Let $\ARplax(\tC)=\FUN^{\plax}([1],\tC)$ be the (op)lax arrow $(\infty,2)$-category of $\tC$ and denote by $\ev_i:\ARplax(\tC) \to \tC$ the functor induced by restriction along the map $\{i\} \to [1]$. We consider a functor 
    \[
@@ -115,5 +158,7 @@
     f^*: \FIB_{(i,j)}(\tD)  \llra \CATIT_{/(\tC,\mathfrak{p})}: f_*
   \]
 \end{thm}
+
+\section{A fibrewise criterion for Kan extensions}
 
 \end{document}

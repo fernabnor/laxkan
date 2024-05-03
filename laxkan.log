@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  30 APR 2024 12:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  3 MAY 2024 10:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1241,124 +1241,135 @@ LaTeX Font Info:    Font shape `T1/fbb-LF/m/sc' will be
 \tf@toc=\write5
 \openout5 = `laxkan.toc'.
 
+LaTeX Font Info:    Font shape `U/BOONDOX-ds/m/n' will be
+(Font)              scaled to size 10.0pt on input line 27.
+LaTeX Font Info:    Font shape `U/BOONDOX-ds/m/n' will be
+(Font)              scaled to size 7.3pt on input line 27.
+LaTeX Font Info:    Font shape `U/BOONDOX-ds/m/n' will be
+(Font)              scaled to size 5.5pt on input line 27.
 LaTeX Font Info:    Trying to load font information for T1+Cabin-TLF on input l
-ine 26.
+ine 27.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/cabin/T1Cabin-TLF.fd
 File: T1Cabin-TLF.fd 2020/07/15 (autoinst) Font definitions for T1/Cabin-TLF.
 )
 LaTeX Font Info:    Font shape `T1/Cabin-TLF/m/n' aliased to
-(Font)              `T1/Cabin-TLF/regular/n' on input line 26.
+(Font)              `T1/Cabin-TLF/regular/n' on input line 27.
 LaTeX Font Info:    Font shape `T1/Cabin-TLF/regular/n' will be
-(Font)              scaled to size 9.49997pt on input line 26.
+(Font)              scaled to size 9.49997pt on input line 27.
 LaTeX Font Info:    Font shape `T1/fbb-LF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 26.
+(Font)              scaled to size 7.3pt on input line 27.
 LaTeX Font Info:    Font shape `T1/fbb-LF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 26.
-LaTeX Font Info:    Font shape `U/BOONDOX-ds/m/n' will be
-(Font)              scaled to size 10.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/BOONDOX-ds/m/n' will be
-(Font)              scaled to size 7.3pt on input line 26.
-LaTeX Font Info:    Font shape `U/BOONDOX-ds/m/n' will be
-(Font)              scaled to size 5.5pt on input line 26.
+(Font)              scaled to size 5.5pt on input line 27.
+LaTeX Font Info:    Font shape `T1/fbb-LF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 33.
+LaTeX Font Info:    Font shape `T1/fbb-LF/m/it' will be
+(Font)              scaled to size 7.3pt on input line 45.
+LaTeX Font Info:    Font shape `T1/fbb-LF/m/it' will be
+(Font)              scaled to size 5.5pt on input line 45.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 10.0pt on input line 45.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 7.3pt on input line 45.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 5.5pt on input line 45.
+LaTeX Font Info:    Font shape `T1/fbb-LF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 48.
+ [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `U/BOONDOX-frak/m/n' will be
-(Font)              scaled to size 10.0pt on input line 28.
+(Font)              scaled to size 10.0pt on input line 71.
 LaTeX Font Info:    Font shape `U/BOONDOX-frak/m/n' will be
-(Font)              scaled to size 7.3pt on input line 28.
+(Font)              scaled to size 7.3pt on input line 71.
 LaTeX Font Info:    Font shape `U/BOONDOX-frak/m/n' will be
-(Font)              scaled to size 5.5pt on input line 28.
+(Font)              scaled to size 5.5pt on input line 71.
 
 ! Double subscript.
-l.28      \mathfrak{F}_{(i,j)}: \CATIT_
+l.71      \mathfrak{F}_{(i,j)}: \CATIT_
                                        {/\tC} \to \FIB_{(i,j)}(\tC),
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-LaTeX Font Info:    Font shape `T1/fbb-LF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 46.
-LaTeX Font Info:    Font shape `T1/fbb-LF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 59.
-[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2]
 ! Double subscript.
-l.62    Let $\CATIT_
-                    {/(\tC,\mathfrak{p})}$ be the locally full subcategory o...
+l.105    Let $\CATIT_
+                     {/(\tC,\mathfrak{p})}$ be the locally full subcategory ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.62 ...e the locally full subcategory of $\CATIT_
+l.105 ... the locally full subcategory of $\CATIT_
                                                   {/\tC}$ whose objects are ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Font shape `T1/fbb-LF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 64.
+(Font)              scaled to size 6.0pt on input line 107.
 ! Double subscript.
-l.67     The morphisms in $\CATIT_
-                                  {/(\tC,\mathfrak{p})}$ are precisely those...
+l.110     The morphisms in $\CATIT_
+                                   {/(\tC,\mathfrak{p})}$ are precisely thos...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.67 ...\tX \to \tC$ and $\tY \to \tC$ in $\CATIT_
+l.110 ...tX \to \tC$ and $\tY \to \tC$ in $\CATIT_
                                                   {/(\tC,\mathfrak{p})}$ we ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.67 ... the mapping $\infty$-category in $\CATIT_
+l.110 ...the mapping $\infty$-category in $\CATIT_
                                                   {/(\tC,\mathfrak{p})}$.
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.71    Observe that $\CATIT_
-                             {/(\tC,\mathfrak{p}^{(i,j)}_{\flat})}$ is simpl...
+l.114    Observe that $\CATIT_
+                              {/(\tC,\mathfrak{p}^{(i,j)}_{\flat})}$ is simp...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.71 ...y the slice $(\infty,2)$-category $\CATIT_
+l.114 ... the slice $(\infty,2)$-category $\CATIT_
                                                   {/\tC}$ and that if $\math...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.71 ...rak{p}=(\tC,(i,j),E,\sharp)$ then $\CATIT_
+l.114 ...ak{p}=(\tC,(i,j),E,\sharp)$ then $\CATIT_
                                                   {/(\tC,\mathfrak{p})}$ is ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-Overfull \hbox (8.47601pt too wide) in paragraph at lines 71--72
+Overfull \hbox (8.47601pt too wide) in paragraph at lines 114--115
 []\T1/fbb-LF/b/n/10 Remark 2.0.4. []\T1/fbb-LF/m/n/10 Ob-serve that $[][][]$ is
  sim-ply given by the slice $\LMS/ntxsy/m/n/10 ¹1\OML/nxlmi/m/it/10 ; \OT1/fbb-
 TLF/m/n/10 2\LMS/ntxsy/m/n/10 º$\T1/fbb-LF/m/n/10 -category
  []
 
 ! Double subscript.
-l.77      f^*:   \CATIT_
-                        {/(\tD,\mathfrak{q})} \to \CATIT_{/(\tC,\mathfrak{p})}
+l.120      f^*:   \CATIT_
+                         {/(\tD,\mathfrak{q})} \to \CATIT_{/(\tC,\mathfrak{p})}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.77 ...  \CATIT_{/(\tD,\mathfrak{q})} \to \CATIT_
+l.120 ... \CATIT_{/(\tD,\mathfrak{q})} \to \CATIT_
                                                   {/(\tC,\mathfrak{p})}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.85      f^{\lax}_{\patp}: \CATIT_
-                                   {/\tD} \to \FIB_{(i,j)}(\tD) \to \CATIT_{...
+l.128      f^{\lax}_{\patp}: \CATIT_
+                                    {/\tD} \to \FIB_{(i,j)}(\tD) \to \CATIT_...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.85 ...T_{/\tD} \to \FIB_{(i,j)}(\tD) \to \CATIT_
+l.128 ..._{/\tD} \to \FIB_{(i,j)}(\tD) \to \CATIT_
                                                   {/(\tC,\mathfrak{p})}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.93       Rf_{*}\colon \CATIT_
-                               {/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_{/\tD...
+l.136       Rf_{*}\colon \CATIT_
+                                {/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_{/\t...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.93 ...T_{/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_
+l.136 ..._{/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_
                                                   {/\tD})^{\op},\CATI), \ens...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-Overfull \hbox (1.83441pt too wide) detected at line 94
+Overfull \hbox (1.83441pt too wide) detected at line 137
 \OML/nxlmi/m/it/10 Rf[] [] [] [][][] \LMS/ntxsy/m/n/10 ! []¹¹[][][]º[]\OML/nxlm
 i/m/it/10 ; [][]\LMS/ntxsy/m/n/10 º\OML/nxlmi/m/it/10 ; \LMS/ntxsy/m/n/10 ¹\U/B
 OONDOX-ds/m/n/10 X \LMS/ntxsy/m/n/10 ! \U/BOONDOX-ds/m/n/10 C\LMS/ntxsy/m/n/10 
@@ -1366,56 +1377,52 @@ OONDOX-ds/m/n/10 X \LMS/ntxsy/m/n/10 ! \U/BOONDOX-ds/m/n/10 C\LMS/ntxsy/m/n/10
 BOONDOX-ds/m/n/10 X\LMS/ntxsy/m/n/10 º\OML/nxlmi/m/it/10 :
  []
 
-LaTeX Font Info:    Font shape `T1/fbb-LF/m/it' will be
-(Font)              scaled to size 7.3pt on input line 100.
-LaTeX Font Info:    Font shape `T1/fbb-LF/m/it' will be
-(Font)              scaled to size 5.5pt on input line 100.
 ! Double subscript.
-l.100      Rf_{*}\colon \CATIT_
+l.143      Rf_{*}\colon \CATIT_
                                {/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_{/\tD...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.100 ..._{/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_
+l.143 ..._{/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_
                                                   {/\tD})^{\op},\CATI)
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.102 ... composite $\FIB_{(i,j)}(\tD) \to \CATIT_
+l.145 ... composite $\FIB_{(i,j)}(\tD) \to \CATIT_
                                                   {/\tD} \to \FUN( (\CATIT_{...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.102 ...\tD) \to \CATIT_{/\tD} \to \FUN( (\CATIT_
+l.145 ...\tD) \to \CATIT_{/\tD} \to \FUN( (\CATIT_
                                                   {/\tD})^{\op},\CATI)$ wher...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.109   We will call the functor $f_{*}: \CATIT_
+l.152   We will call the functor $f_{*}: \CATIT_
                                                 {/(\tC,\mathfrak{p})} \to \F...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.115     f^*: \FIB_{(i,j)}(\tD)  \llra \CATIT_
+l.158     f^*: \FIB_{(i,j)}(\tD)  \llra \CATIT_
                                                {/(\tC,\mathfrak{p})}: f_*
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-[2] (./laxkan.aux)
+[3] (./laxkan.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 Package rerunfilecheck Info: File `laxkan.out' has not changed.
-(rerunfilecheck)             Checksum: B8D50A45E0BACC3DEFB894C0F59390AE;484.
+(rerunfilecheck)             Checksum: 3423902204DCDD50E88CD9F94A35DD9D;1504.
  ) 
 Here is how much of TeX's memory you used:
- 30344 strings out of 478268
- 570715 string characters out of 5846347
- 791167 words of memory out of 5000000
- 47785 multiletter control sequences out of 15000+600000
- 617222 words of font info for 143 fonts, out of 8000000 for 9000
+ 30373 strings out of 478268
+ 571144 string characters out of 5846347
+ 791414 words of memory out of 5000000
+ 47800 multiletter control sequences out of 15000+600000
+ 618922 words of font info for 149 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 115i,17n,118p,605b,1215s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,17n,118p,605b,1213s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fbb/fbb_3cnzgn.enc}{/usr/
 local/texlive/2022/texmf-dist/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{/usr/local/
 texlive/2022/texmf-dist/fonts/enc/dvips/fbb/fbb_ned4xv.enc}{/usr/local/texlive/
@@ -1431,15 +1438,17 @@ ts/type1/public/newtx/NewTXMI5.pfb></usr/local/texlive/2022/texmf-dist/fonts/ty
 pe1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/p
 ublic/fbb/fbb-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/f
 bb/fbb-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fbb/fb
-b-Regular.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmi
-aX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txsya.pfb
-></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/boondox/zxxrf8a.pfb></usr/local
-/texlive/2022/texmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb>
-Output written on laxkan.pdf (2 pages, 213512 bytes).
+b-Regular.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txex
+s.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><
+/usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/l
+ocal/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/public/boondox/zxxrf8a.pfb></usr/local/texlive
+/2022/texmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb></usr/local/texlive/202
+2/texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
+Output written on laxkan.pdf (3 pages, 234798 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
