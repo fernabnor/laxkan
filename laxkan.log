@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  3 MAY 2024 11:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  8 MAY 2024 09:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1277,390 +1277,394 @@ LaTeX Font Info:    Font shape `T1/fbb-LF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 48.
  [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Freeze math alphabet allocation in version normal.
-(Font)              Allocated math groups: 14 (local: 2) on input line 79.
+(Font)              Allocated math groups: 14 (local: 2) on input line 98.
 LaTeX Font Info:    Font shape `U/BOONDOX-frak/m/n' will be
-(Font)              scaled to size 10.0pt on input line 79.
+(Font)              scaled to size 10.0pt on input line 98.
 LaTeX Font Info:    Font shape `U/BOONDOX-frak/m/n' will be
-(Font)              scaled to size 7.3pt on input line 79.
+(Font)              scaled to size 7.3pt on input line 98.
 LaTeX Font Info:    Font shape `U/BOONDOX-frak/m/n' will be
-(Font)              scaled to size 5.5pt on input line 79.
+(Font)              scaled to size 5.5pt on input line 98.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 79.
+ne 98.
 
 ! Double subscript.
-l.79      \mathfrak{F}_{(i,j)}: \CATIT_
+l.98      \mathfrak{F}_{(i,j)}: \CATIT_
                                        {/\tC} \to \FIB_{(i,j)}(\tC),
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 79.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 80.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 83.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 83.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 83.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 86.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 86.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 87.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 87.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 87.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 89.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 90.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 90.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 90.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 90.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 90.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 90.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 90.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 92.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 97.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 97.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 97.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 99.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 99.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 99.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 100.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 100.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 100.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 103.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 103.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 103.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 103.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 103.
+ine 98.
 [2]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 109.
+ine 99.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 109.
+ine 102.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 102.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 109.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 109.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 109.
+ne 102.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 109.
+ne 105.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 105.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 106.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 106.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 106.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 107.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 108.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 109.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 109.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 109.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 109.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 113.
+ine 109.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 109.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 109.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 109.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 109.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 111.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 116.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 116.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 116.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 118.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 118.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 118.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 119.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 119.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 119.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 120.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 120.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 122.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 122.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 122.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 122.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 122.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 128.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 128.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 128.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 128.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 128.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 128.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 128.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 128.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 128.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 128.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 132.
 
 ! Double subscript.
-l.113    Let $\CATIT_
+l.132    Let $\CATIT_
                      {/(\tC,\mathfrak{p})}$ be the locally full subcategory ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 113.
+ne 132.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 113.
+ine 132.
 ! Double subscript.
-l.113 ... the locally full subcategory of $\CATIT_
+l.132 ... the locally full subcategory of $\CATIT_
                                                   {/\tC}$ whose objects are ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 113.
+ine 132.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 113.
+ine 132.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 115.
+ine 134.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 115.
+ine 134.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 115.
+ine 134.
 LaTeX Font Info:    Font shape `T1/fbb-LF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 115.
+(Font)              scaled to size 6.0pt on input line 134.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 116.
+ine 135.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 116.
+ine 135.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 116.
+ine 135.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 116.
+ine 135.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 137.
 ! Double subscript.
-l.118     The morphisms in $\CATIT_
+l.137     The morphisms in $\CATIT_
                                    {/(\tC,\mathfrak{p})}$ are precisely thos...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 118.
+ne 137.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 137.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 137.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 137.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 137.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 137.
 ! Double subscript.
-l.118 ...tX \to \tC$ and $\tY \to \tC$ in $\CATIT_
+l.137 ...tX \to \tC$ and $\tY \to \tC$ in $\CATIT_
                                                   {/(\tC,\mathfrak{p})}$ we ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 118.
+ne 137.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 137.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 118.
+ne 137.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 137.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 137.
 ! Double subscript.
-l.118 ...the mapping $\infty$-category in $\CATIT_
+l.137 ...the mapping $\infty$-category in $\CATIT_
                                                   {/(\tC,\mathfrak{p})}$.
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 118.
+ne 137.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 122.
+ine 141.
 ! Double subscript.
-l.122    Observe that $\CATIT_
+l.141    Observe that $\CATIT_
                               {/(\tC,\mathfrak{p}^{(i,j)}_{\flat})}$ is simp...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 122.
+ne 141.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 122.
+ine 141.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 122.
+ine 141.
 ! Double subscript.
-l.122 ... the slice $(\infty,2)$-category $\CATIT_
+l.141 ... the slice $(\infty,2)$-category $\CATIT_
                                                   {/\tC}$ and that if $\math...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 122.
+ine 141.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 122.
+ne 141.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 122.
+ine 141.
 ! Double subscript.
-l.122 ...ak{p}=(\tC,(i,j),E,\sharp)$ then $\CATIT_
+l.141 ...ak{p}=(\tC,(i,j),E,\sharp)$ then $\CATIT_
                                                   {/(\tC,\mathfrak{p})}$ is ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 122.
+ne 141.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 122.
+ine 141.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 122.
+ine 141.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 122.
+ine 141.
 
-Overfull \hbox (8.47601pt too wide) in paragraph at lines 122--123
+Overfull \hbox (8.47601pt too wide) in paragraph at lines 141--142
 []\T1/fbb-LF/b/n/10 Remark 2.0.4. []\T1/fbb-LF/m/n/10 Ob-serve that $[][][]$ is
  sim-ply given by the slice $\LMS/ntxsy/m/n/10 ¹1\OML/nxlmi/m/it/10 ; \OT1/fbb-
 TLF/m/n/10 2\LMS/ntxsy/m/n/10 º$\T1/fbb-LF/m/n/10 -category
  []
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 126.
+ine 145.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 126.
+ne 145.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 126.
+ine 145.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 126.
+ine 145.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 128.
+ine 147.
 ! Double subscript.
-l.128      f^*:   \CATIT_
+l.147      f^*:   \CATIT_
                          {/(\tD,\mathfrak{q})} \to \CATIT_{/(\tC,\mathfrak{p})}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 128.
+ne 147.
 ! Double subscript.
-l.128 ... \CATIT_{/(\tD,\mathfrak{q})} \to \CATIT_
+l.147 ... \CATIT_{/(\tD,\mathfrak{q})} \to \CATIT_
                                                   {/(\tC,\mathfrak{p})}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 129.
+ne 148.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 130.
+ine 149.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 134.
+ne 153.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 134.
+ine 153.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 155.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 136.
+ne 155.
 ! Double subscript.
-l.136      f^{\lax}_{\patp}: \CATIT_
+l.155      f^{\lax}_{\patp}: \CATIT_
                                     {/\tD} \to \FIB_{(i,j)}(\tD) \to \CATIT_...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 155.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 155.
 ! Double subscript.
-l.136 ..._{/\tD} \to \FIB_{(i,j)}(\tD) \to \CATIT_
+l.155 ..._{/\tD} \to \FIB_{(i,j)}(\tD) \to \CATIT_
                                                   {/(\tC,\mathfrak{p})}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 137.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 138.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 138.
+ne 156.
+[3]
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 142.
+ne 156.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 142.
+ine 157.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 144.
+ine 157.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 161.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 161.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 163.
+
 ! Double subscript.
-l.144       Rf_{*}\colon \CATIT_
+l.163       Rf_{*}\colon \CATIT_
                                 {/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_{/\t...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 144.
+ne 163.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 144.
+ine 163.
 ! Double subscript.
-l.144 ..._{/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_
+l.163 ..._{/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_
                                                   {/\tD})^{\op},\CATI), \ens...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 144.
+ine 163.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 144.
+ine 163.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 144.
+ine 163.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 144.
+ne 163.
 
-Overfull \hbox (1.83441pt too wide) detected at line 145
+Overfull \hbox (1.83441pt too wide) detected at line 164
 \OML/nxlmi/m/it/10 Rf[] [] [] [][][] \LMS/ntxsy/m/n/10 ! []¹¹[][][]º[]\OML/nxlm
 i/m/it/10 ; [][]\LMS/ntxsy/m/n/10 º\OML/nxlmi/m/it/10 ; \LMS/ntxsy/m/n/10 ¹\U/B
 OONDOX-ds/m/n/10 X \LMS/ntxsy/m/n/10 ! \U/BOONDOX-ds/m/n/10 C\LMS/ntxsy/m/n/10 
@@ -1669,106 +1673,104 @@ BOONDOX-ds/m/n/10 X\LMS/ntxsy/m/n/10 º\OML/nxlmi/m/it/10 :
  []
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 145.
+ne 164.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 151.
+ine 170.
 ! Double subscript.
-l.151      Rf_{*}\colon \CATIT_
+l.170      Rf_{*}\colon \CATIT_
                                {/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_{/\tD...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 151.
+ne 170.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 151.
+ine 170.
 ! Double subscript.
-l.151 ..._{/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_
+l.170 ..._{/(\tC,\mathfrak{p})} \to \FUN( (\CATIT_
                                                   {/\tD})^{\op},\CATI)
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 151.
+ine 170.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 151.
+ine 170.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 152.
+ine 171.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 153.
+ine 172.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 153.
+ine 172.
 ! Double subscript.
-l.153 ... composite $\FIB_{(i,j)}(\tD) \to \CATIT_
+l.172 ... composite $\FIB_{(i,j)}(\tD) \to \CATIT_
                                                   {/\tD} \to \FUN( (\CATIT_{...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 153.
+ine 172.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 153.
+ine 172.
 ! Double subscript.
-l.153 ...\tD) \to \CATIT_{/\tD} \to \FUN( (\CATIT_
+l.172 ...\tD) \to \CATIT_{/\tD} \to \FUN( (\CATIT_
                                                   {/\tD})^{\op},\CATI)$ wher...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 153.
+ine 172.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 153.
+ine 172.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 153.
+ine 172.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 160.
+ine 179.
 ! Double subscript.
-l.160   We will call the functor $f_{*}: \CATIT_
+l.179   We will call the functor $f_{*}: \CATIT_
                                                 {/(\tC,\mathfrak{p})} \to \F...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 160.
+ne 179.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 160.
+ine 179.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 164.
+ne 183.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 164.
+ine 183.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 164.
+ine 183.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 166.
+ine 185.
 ! Double subscript.
-l.166     f^*: \FIB_{(i,j)}(\tD)  \llra \CATIT_
+l.185     f^*: \FIB_{(i,j)}(\tD)  \llra \CATIT_
                                                {/(\tC,\mathfrak{p})}: f_*
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 167.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 172.
-[3] [4] (./laxkan.aux)
+ne 186.
+[4] (./laxkan.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -1777,13 +1779,13 @@ Package rerunfilecheck Info: File `laxkan.out' has not changed.
 (rerunfilecheck)             Checksum: 3423902204DCDD50E88CD9F94A35DD9D;1504.
  ) 
 Here is how much of TeX's memory you used:
- 30379 strings out of 478268
- 571229 string characters out of 5846347
- 791476 words of memory out of 5000000
- 47804 multiletter control sequences out of 15000+600000
- 618922 words of font info for 149 fonts, out of 8000000 for 9000
+ 30439 strings out of 478268
+ 572645 string characters out of 5846347
+ 792482 words of memory out of 5000000
+ 47861 multiletter control sequences out of 15000+600000
+ 619707 words of font info for 152 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 115i,17n,118p,605b,1215s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,17n,118p,605b,1214s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fbb/fbb_3cnzgn.enc}{/usr/
 local/texlive/2022/texmf-dist/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{/usr/local/
 texlive/2022/texmf-dist/fonts/enc/dvips/fbb/fbb_ned4xv.enc}{/usr/local/texlive/
@@ -1807,10 +1809,10 @@ exs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb
 exlive/2022/texmf-dist/fonts/type1/public/boondox/zxxrf8a.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb></usr/local/texlive/2
 022/texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on laxkan.pdf (4 pages, 239415 bytes).
+Output written on laxkan.pdf (4 pages, 242837 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
+ 193 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
  30 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 

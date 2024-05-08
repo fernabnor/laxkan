@@ -64,13 +64,32 @@
   for $j = 0,1$.
 \end{propn}
 
-\begin{propn}\label{prop:1catslices}
-  Let $\Lambda^2_1=(0 \to 2 \leftarrow 1)$ denote the walking cospan and consider a functor in $F: \Lambda^2_1 \to \CATI$ given by $[0] \to \oY \leftarrow \oX$. Then we have equivalences of \icats:
+\begin{propn}\label{prop:arrow}
+  Let $\Lambda^2_1=(0 \to 2 \leftarrow 1)$ denote the walking cospan and consider a functor in $F: \Lambda^2_1 \to \CATI$ given by $\oA \to \oC \leftarrow \oB$. Then we have equivalences of \icats:
   \[
-    \lim^{\elax}F = \oX_{/y}, \enspace \enspace \enspace \lim^{\elax}F = \oX_{y/},
+    \lim^{\elax}F = (\oC^{[1]}\times_{\ev_0} \oB)\times_{\ev_1} \oA, \enspace \enspace \enspace \lim^{\eoplax}F = (\oC^{[1]}\times_{\ev_1} \oB)\times_{\ev_0} \oA,
   \]
-  where $E=(0 \to 2)$ and $y:[0] \to Y$.
+  where $E=(0 \to 2)$.
 \end{propn}
+\begin{proof}
+  We give the proof in the $\elax$ case since the $\eoplax$ case is formally dual. Let $\scr{F} \to \Lambda^2_1$ be the cocartesian fibration associated to $F$. It follows from \cref{prop:laxlimCATIT} that we have a natural equivalence 
+  \[
+      \lim^{\elax}_{/\Lambda^2_1}F \simeq \FUN^{E\dcoc}_{/\Lambda^2_1}(\Lambda^2_1,\scr{F}) \simeq \NAT_{\Lambda^2_1,\CATI}(\scr{W},F)
+   \] 
+   where $\scr{W}:\Lambda^2_1 \to \CATI$ is given by $\scr{W}(0)=\{1\} \to [1]=\scr{W}(2) \leftarrow \{1\}=\scr{W}(1)$. Given an \itcat{} $\oT$, we can construct natural equivalences
+   \[
+     \Map(\oT,\NAT_{\Lambda^2_1,\CATI}(\scr{W},F))\simeq \Nat_{\Lambda^2_1,\CATI}(\oT \times \scr{W},F),
+   \]
+   where the later space can be expressed (according to (REF)) as the limit of the following diagram
+   \[
+     \begin{tikzcd}
+       \Map(\oT,\oB) \arrow[d] & & \Map(\oT,\oA) \arrow[d] \\
+       \Map(\oT,\oC)  & \arrow[l,"\ev^*_{0}"] \Map(\oT\times{[}1{]},C) \arrow[r,swap,"\ev^*_1"]& \Map(\oT,\oC).
+     \end{tikzcd}
+   \]
+   It follows from the universal property of the iterated pullback $ (\oC^{[1]}\times_{\ev_0} \oB)\times_{\ev_1} \oA$ that the limit of the diagram above is naturally equivalent  to the mapping space $\Map(\oT, (\oC^{[1]}\times_{\ev_0} \oB)\times_{\ev_1} \oA)$. The result now follows by the Yoneda lemma.
+  
+\end{proof}
  \subsection{Cofinality}
  fff
  \begin{defn}\label{def:freefib}
