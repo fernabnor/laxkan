@@ -1413,9 +1413,12 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/newtx/txmiaX.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/newtx/ntxsym.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fbb/fbb-Regular-lf-t1.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/boondox/BOONDOX-r-frak.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/boondox/zxxrf7z.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/newtx/ntxsym.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fbb/fbb-Regular-lf-t1.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/boondox/BOONDOX-r-frak.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/boondox/zxxrf7z.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
