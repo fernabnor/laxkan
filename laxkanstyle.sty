@@ -8,6 +8,7 @@
 \usepackage[T1]{fontenc} % LY1 also works
 \usepackage[libertine]{newtxmath}
 \usepackage[cal=boondoxo,bb=boondox,frak=boondox]{mathalfa}
+\usepackage{extarrows}
 \DeclareMathAlphabet{\mathbfsf}{\encodingdefault}{\sfdefault}{bx}{sl}
 
 \newcommand{\ol}[1]{\overline{#1}}
@@ -21,6 +22,17 @@
 \def\lla{\longleftarrow}
 \def\hra{\hookrightarrow}
 \def\llra{\def\arraystretch{.1}\begin{array}{c} \lra \\ \lla \end{array}}
+
+
+\makeatletter
+\newcommand{\fixed@sra}{$\vrule height 2\fontdimen22\textfont2 width 0pt\rightarrow$}
+\newcommand{\shortarrowup}[1]{%
+  \mathrel{\text{\rotatebox[origin=c]{65}{\fixed@sra}}}
+}
+\newcommand{\shortarrowdown}[1]{%
+  \mathrel{\text{\rotatebox[origin=c]{250}{\fixed@sra}}}
+}
+\makeatother
 
 
 \renewcommand{\catname}[1]{\textup{\textmd{\textsf{#1}}}}
@@ -58,6 +70,8 @@
 \newcommand{\elax}{E\dlax}
 \newcommand{\eoplax}{E\doplax}
 \newcommand{\eplax}{E\dplax}
+\newcommand{\upslash}{\!\shortarrowup{1}}
+\newcommand{\downslash}{\!\shortarrowdown{1}}
 
 \newcommand{\twop}{\txt{co}}%{\txt{2-op}}
 \newcommand{\onop}{\txt{op}}%{\txt{1-op}}
